@@ -39,7 +39,7 @@ body {
     justify-content: space-between;
     padding: 28px 0 0;
     font-weight: 400;
-    outline: 1px solid red;
+
 }
 .header__logo {
     width: 176px;
@@ -130,14 +130,14 @@ body {
 .lead__title {
     font-size: 96px;
     line-height: 100px;
-    width: 720px;
+    max-width: 720px;
     text-align: center;
     margin: 0;
     font-weight: 900;
     outline: 1px solid red;
 }
 .lead__subtitle {
-    width: 640px;
+    max-width: 640px;
     font-size: 30px;
     line-height: 36px;
     margin: 32px 0 0;
@@ -299,6 +299,7 @@ body {
     outline: 1px solid red;
 }
 .photo-grid__item {
+    display: block;
     width: 100%;
 }
 @media screen and (max-width: 990px){
@@ -321,7 +322,6 @@ body {
     padding-bottom: 80px;
     display: grid;
     grid-template-columns: 460px 1fr;
-    grid-template-rows: auto auto;
     gap: 48px 40px;
 }
 .place:last-of-type {
@@ -336,17 +336,18 @@ body {
     font-weight: 900;
     font-size: 72px;
     line-height: 76px;
-    width: 100%;
+    max-width: 460px;
     outline: 1px solid red;
 }
 .place__paragraphs {
     margin: 0;
-    width: 100%;
+    max-width: 100%;
     outline: 1px solid red;
 }
 .place__paragraph {
     margin-top: 28px;
     line-height: 1.6;
+
     font-size: 18px;
 }
 .place__paragraph:first-of-type {
@@ -355,6 +356,7 @@ body {
 .place__website {
     align-self: end;
     outline: 1px solid red;
+
 }
 .place__url-heading {
     margin: 0 0 12px;
@@ -394,10 +396,11 @@ body {
         grid-template-columns: 340px 1fr;
     }
 }
-@media screen and (max-width: 569px){
+@media screen and (max-width: 630px){
     .place__title {
         font-size: 32px;
         line-height: 35px;
+        max-width: 100%;
     }
     .places {
         padding: 64px 0 0;
@@ -486,22 +489,20 @@ body {
     flex-direction: column;
     align-items: center;
     transform: translate(-50%, -50%);
-    outline: 1px solid red;
+    width: 255px;
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 650px) {
     .cover__title {
         font-size: 32px;
         line-height: 35px;
-        max-width: 288px;
+        width: 255px;
     }
     .cover__subtitle {
         font-size: 14px;
         line-height: 16px;
-        max-width: 288px;
+        width: 270px;
     }
-    .cover__text {
-        max-width: 288px;
-    }
+
 }
 
 .footer {
@@ -515,18 +516,21 @@ body {
 }
 .footer__links {
     padding: 0;
-    margin: 0 0 0 48px;
+    margin: 0;
     display: flex;
     list-style-type: none;
 }
+.footer-element {
+    margin: 0 48px 0 0;
+}
 .footer__link {
-    margin: 0 0 0 48px;
+
     text-decoration: none;
     color: #FFFFFF;
 }
-.footer__link:first-of-type {
+.footer__link:last-of-type {
     margin: 0;
 }
 .footer__copyright {
-    margin: 0 48px 0 0
+    margin: 0;
 }
