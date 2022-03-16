@@ -11,3 +11,8 @@
        margin-bottom: 27px;
     }
 }
+@media screen and (max-width: 900px) {
+    .place__paragraph {
+        margin-bottom: 25px;
+    }
+}
