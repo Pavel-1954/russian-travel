@@ -1,8 +1,13 @@
 .place__paragraph {
-    margin-top: 28px;
+    margin: 0 0 26px;
     line-height: 1.6;
     font-size: 18px;
 }
-.place__paragraph:first-of-type {
-    margin-top: 0;
+.place__paragraph:last-of-type {
+    margin-bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+    .place__paragraph {
+       margin-bottom: 27px;
+    }
 }
